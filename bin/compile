@@ -41,7 +41,7 @@ fi
 
 echo "Unpacking the archive" | output
 
-gunzip "./$FFMPEG_ARCHIVE_NAME" --strip-components=1
+gunzip "./$FFMPEG_ARCHIVE_NAME"
 
 if [ "$?" != "0" ]; then
   echo "Failed to unpack" | output && exit 1
